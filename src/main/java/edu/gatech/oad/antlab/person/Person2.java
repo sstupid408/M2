@@ -35,7 +35,7 @@ public class Person2 {
 	    String output = "";
 		for (int i = input.length(); i > 0; i--) {
 			rand = (int) Math.floor(Math.random() * i);
-			output += "" + input.chatAt(rand);
+			output += "" + input.charAt(rand);
 			input = input.substring(0, rand) + input.substring(rand + 1);
 		}
 		return output;
