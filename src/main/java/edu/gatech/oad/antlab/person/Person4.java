@@ -31,9 +31,9 @@ public class Person4 {
      */
     private String calc(String input) {
         newStr = "";
-        for (each:input) {
-            each = each + 1;
-            newStr += each;
+        for (int i = 0; i < size; i++) {
+            newStr += (input[i] + 1);
+            i++;
         }
         return newStr;
     }
